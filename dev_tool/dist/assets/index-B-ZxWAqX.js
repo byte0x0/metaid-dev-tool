@@ -1,0 +1,1 @@
+import{a as e,p as r,b as d}from"./index-BaC-TcbR.js";function a(s){return e("/addresses",{params:s})}function n(s){return r("/addresses",s)}function o(s){return d(`/addresses/${s}`)}export{n as c,o as d,a as g};

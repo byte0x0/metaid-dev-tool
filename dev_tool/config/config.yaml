@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  frontend_port: 8081
+  mode: debug
+  #mode: release
+cors:
+  allow_origins:
+    - "http://127.0.0.1:8081"
+    - "http://localhost:8081"
+  allow_methods:
+    - GET
+    - POST
+    - PUT
+    - DELETE
+    - OPTIONS
+    - PATCH
+  allow_headers:
+    - Content-Type
+    - Content-Length
+    - Accept-Encoding
+    - X-CSRF-Token
+    - Authorization
+    - X-Requested-With
+    - Origin
+    - Accept
+  allow_credentials: true
+  max_age: 86400                    # 预检请求结果缓存时间（秒）
+
+database:
+  sqlite:
+    path: "./data/dev.db" 
